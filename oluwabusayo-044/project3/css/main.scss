@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Poppins:wght@200&family=Qahiri&family=Zen+Antique+Soft&display=swap');
+
+
+body {
+    // columns: ;
+    margin: 0;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+// for DOM Manipulation
+.hide-element {
+    display: none;
+}
+//
+.navbar {
+    padding: 0;
+    margin: 0 auto;
+
+    .container {
+        text-align: center;
+        .logo {
+            
+            h3 {
+
+                img {
+                    margin: -.5em;
+                }
+                
+            }
+        }
+
+    }
+}
+
+
+.todo-dtails {
+    
+    .container {
+        background: linear-gradient( rgba(71, 70, 70, 0.5), rgba(66, 65, 65, 0.5) ), url('../images/bg.jpg');
+        background-position:center top;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 90vh;
+        display: flex;
+        justify-content: space-between;
+        padding: .5em;
+
+        .left-details {
+            width: 5%;
+            text-align: left;
+            height: auto;
+        }
+// Major view for all actions
+        .middle-details {
+            width: 70%;
+            .cancel-edit {
+                color: #0D47A1;
+                font-weight: bolder;
+                cursor: pointer;
+                font-size: large;
+            }
+            .todo-form {
+                margin-left: 30%;
+            }
+            .edit-header {
+                color: #0D47A1;
+                margin-left: 20%;
+            }
+            label {
+                display: block;
+                font-size: 1.2em;
+                margin-bottom: .5em;
+                color: black;
+                font-weight: bold;
+
+                small {
+                    color: red;
+                    font-size: x-small;
+                }
+            }
+            
+            .input-form {
+                width: 60%;
+                // padding: -8em;
+                margin-bottom: .1em;
+                border-radius: .9em;
+                border: 2pm solid rgb(231, 225, 225);
+                box-sizing: border-box;
+            }
+            .date-form {
+                width: 30%;
+            }
+            .input-form {
+                height: 30px;
+            }
+
+            input[type="submit"] {
+                background-color: #DF4B4B;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                border: none;
+                margin: .5em;
+                border-radius: 5em;
+                // display: inline-block;
+                // padding: .8em;
+                width: unset;
+                cursor: pointer;
+            }
+            // todo table
+            .todo-table, .completed-table {
+                max-width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 10px;
+                padding-right: 10px;
+                // display: none;
+
+                h2 {
+                    font-size: 26px;
+                    margin: 20px 0;
+                    text-align: center;
+                    font-weight: bold;
+                    color: #180505;
+                }
+
+                .responsive-table {
+                    li {
+                      border-radius: 3px;
+                      padding: 10px 15px;
+                      margin: .5em;
+                      display: flex;
+                      justify-content: space-between;
+                      margin-bottom: 20px;
+                    }
+                    // .todo-edit {
+                    //     display: flex;
+                    // }
+                    // .todo-info {
+                    //     display: flex;
+                    // }
+                    .col {
+                        margin: .5em;
+                    }
+                    .table-header {
+                      background-color: #0D47A1;
+                      color: #ffffff;
+                      font-size: 14px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.03em;
+                    }
+                    .table-row {
+                      background-color: #ffffff;
+                      box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+                    }
+                    .col-1 {
+                      flex-basis: 25%;
+                    }
+                    .col-2 {
+                      flex-basis: 25%;
+                    }
+                    .col-3 {
+                      flex-basis: 25%;
+                    }
+                    .col-4 {
+                      flex-basis: 25%;
+                    }
+                    .col-5 {
+                        flex-basis: 25%;
+                    }
+                    .col-6 {
+                        flex-basis: 25%;
+                    }
+                }
+                .delete {
+                    color: red;
+                    cursor: pointer;
+                    font-weight: bold;
+                }
+                .edit {
+                    color: blue;
+                    cursor: pointer;
+                }
+
+                .edit-name, .edit-description {
+                    width: 1em;
+                }
+            }
+        }
+
+        .right-details {
+            width: 10%;
+        }
+    }
+}
+
+

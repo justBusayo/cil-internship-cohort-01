@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo List</title>
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h3><img src="images/logo.svg" alt="logo"> Simple ToDo</h3>
+                </div>
+            </div>
+        </div>
+
+            <!-- Todo details -->
+            <div class="todo-dtails">
+                <div class="container">
+                    <div class="left-details">
+                        <div class="filter-details">
+                            <ul>
+                                <li id="today-tasks">Today's Task</li>
+                                <li id="all-tasks">All Tasks</li>
+                                <li id="completed-tasks">Completed Tasks</li>
+                            </ul>
+                        </div>
+
+                        <div class="todo-edit hide-element" id="todo-edit-form">
+                          <h2>Edit Task</h2>
+                          <form id="edit-form">
+                            <label for="edit-labels">Task</label> <br>
+                            <input type="text" class="edit-input" name="task" id="edit-name"> <br>
+
+                            <label for="edit-labels">Date</label><br>
+                            <input type="date" class="edit-input" name="date" id="edit-date">
+                            
+                            <input type="text" class="edit-input" name="id" id="edit-id" hidden>
+                            
+                            <input type="submit" value="Edit" class="submit-edit" id="submit-edit">
+                            <!-- <a id="submit" class="submit">Create Task</a> -->
+                            <a class="cancel-edit" id="cancel-edit">Cancel</a>
+                          </form>
+                        </div>
+                    </div>
+
+                    <!-- for creating todo and view other details -->
+                    <div class="middle-details">
+                        <p class="present-date">Today <span id="date"></span></p>
+                        <p class="add-todo" id="add-todo" title="Click to Schedule Task"> <img src="images/add.svg" alt="Add task" class="add-task"> Add ToDo</p>
+
+                        <!-- to do form starts -->
+                        <div class="todo-form hide-element" id="todo-form">
+                            <form id="todo-form">
+                                <label for="task">Task <small id="name-message"></small></label> 
+                                <input type="text" class="input-form" name="task" id="task">
+    
+                                <label for="todo-date">Date <small id="date-message"></small></label>
+                                <input type="date" class="input-form" name="date" id="todo-date">
+                                <label for="todo-description">Description of task <small id="description-message"></small></label>
+                                <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+                                <input type="submit" value="Create Task" class="submit" id="submit">
+                                <!-- <a id="submit" class="submit">Create Task</a> -->
+                                <a class="cancel-task" id="cancel-task">Cancel</a>
+                            </form>
+                        </div>
+                        <!-- to do form ends -->
+
+                        <!-- Todo table for today's tasks -->
+                        <div class="todo-table hide-element" id="today-table">
+                          <h2>Today's Tasks</h2>
+                          <ul class="responsive-table" id="todays_task">
+                            <li class="table-header">
+                              <div class="col col-1">Task</div>
+                              <div class="col col-2">Description</div>
+                              <div class="col col-3">Date</div>
+                              <div class="col col-5">Actions</div>
+                            </li>
+                            <!-- <li class="table-row">
+                              <div class="col col-1" data-label="Todo">House Chores</div>
+                                <div class="col col-2" data-label="Todo Description">Start and finish cleaning of the house</div>
+                                <div class="col col-3" data-label="Date">23/12/2021</div>
+                                <div class="col col-5" data-label="Delete">
+                                  <img src="images/delete.png" alt="delete" title="Delete" class="delete">
+                                  <img src="images/edit.png" alt="edit" title="Edit" class="edit">
+                                </div>
+                            </li> -->
+                          </ul>
+                        </div>  
+                        <!-- Todo table for today's tasks Ends-->
+
+                        <!-- Todo Table Lists for all Tasks-->
+                        <div class="todo-table" id="todo-table">
+                            <h2>Todo Lists</h2>
+                            <ul class="responsive-table" id="all-task">
+                              <li class="table-header">
+                                <div class="col col-1">Task</div>
+                                <div class="col col-2">Description</div>
+                                <div class="col col-3">Date</div>
+                                <div class="col col-5">Actions</div>
+                              </li>
+                              <!-- Dynamically rendering li here -->
+                            </ul>
+                          </div>
+                          <!-- todo table lists ends -->
+
+                          <!-- Deleted Lists -->
+                          <div class="completed-table hide-element" id="completed-table">
+                            <h2>Completed Lists</h2>
+                            <ul class="responsive-table" id="completed-task">
+                              <li class="table-header">
+                                <div class="col col-1">Task</div>
+                                <div class="col col-2">Description</div>
+                                <div class="col col-3">Date</div>
+                              </li>
+                              <!-- <li class="table-row">
+                                <div class="col col-1" data-label="Todo"><del>House Chores</del></div>
+                                <div class="col col-2" data-label="Todo Description"><del>Start and finish cleaning of the house</del></div>
+                                <div class="col col-3" data-label="Date"><del>23/12/2021</del></div>
+                              </li> -->
+                            </ul>
+                          </div>
+                          <!-- Deleted list ends -->
+
+                    </div>
+
+                    <div class="right-details">
+                        <div class="demo-calendar">
+                            <img src="images/bell.png" alt="" class="date-demo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

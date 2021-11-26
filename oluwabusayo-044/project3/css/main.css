@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Poppins:wght@200&family=Qahiri&family=Zen+Antique+Soft&display=swap");
+body {
+  margin: 0;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+.hide-element {
+  display: none;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.navbar .container {
+  text-align: center;
+}
+
+.navbar .container .logo h3 img {
+  margin: -.5em;
+}
+
+.todo-dtails .container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(71, 70, 70, 0.5)), to(rgba(66, 65, 65, 0.5))), url("../images/bg.jpg");
+  background: linear-gradient(rgba(71, 70, 70, 0.5), rgba(66, 65, 65, 0.5)), url("../images/bg.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5em;
+}
+
+.todo-dtails .container .left-details {
+  width: 5%;
+  text-align: left;
+  height: auto;
+}
+
+.todo-dtails .container .middle-details {
+  width: 70%;
+}
+
+.todo-dtails .container .middle-details .cancel-edit {
+  color: #0D47A1;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: large;
+}
+
+.todo-dtails .container .middle-details .todo-form {
+  margin-left: 30%;
+}
+
+.todo-dtails .container .middle-details .edit-header {
+  color: #0D47A1;
+  margin-left: 20%;
+}
+
+.todo-dtails .container .middle-details label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+  color: black;
+  font-weight: bold;
+}
+
+.todo-dtails .container .middle-details label small {
+  color: red;
+  font-size: x-small;
+}
+
+.todo-dtails .container .middle-details .input-form {
+  width: 60%;
+  margin-bottom: .1em;
+  border-radius: .9em;
+  border: 2pm solid #e7e1e1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.todo-dtails .container .middle-details .date-form {
+  width: 30%;
+}
+
+.todo-dtails .container .middle-details .input-form {
+  height: 30px;
+}
+
+.todo-dtails .container .middle-details input[type="submit"] {
+  background-color: #DF4B4B;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  margin: .5em;
+  border-radius: 5em;
+  width: unset;
+  cursor: pointer;
+}
+
+.todo-dtails .container .middle-details .todo-table, .todo-dtails .container .middle-details .completed-table {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.todo-dtails .container .middle-details .todo-table h2, .todo-dtails .container .middle-details .completed-table h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: bold;
+  color: #180505;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table li, .todo-dtails .container .middle-details .completed-table .responsive-table li {
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col, .todo-dtails .container .middle-details .completed-table .responsive-table .col {
+  margin: .5em;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .table-header, .todo-dtails .container .middle-details .completed-table .responsive-table .table-header {
+  background-color: #0D47A1;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .table-row, .todo-dtails .container .middle-details .completed-table .responsive-table .table-row {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col-1, .todo-dtails .container .middle-details .completed-table .responsive-table .col-1 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col-2, .todo-dtails .container .middle-details .completed-table .responsive-table .col-2 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col-3, .todo-dtails .container .middle-details .completed-table .responsive-table .col-3 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col-4, .todo-dtails .container .middle-details .completed-table .responsive-table .col-4 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col-5, .todo-dtails .container .middle-details .completed-table .responsive-table .col-5 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col-6, .todo-dtails .container .middle-details .completed-table .responsive-table .col-6 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.todo-dtails .container .middle-details .todo-table .delete, .todo-dtails .container .middle-details .completed-table .delete {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.todo-dtails .container .middle-details .todo-table .edit, .todo-dtails .container .middle-details .completed-table .edit {
+  color: blue;
+  cursor: pointer;
+}
+
+.todo-dtails .container .middle-details .todo-table .edit-name, .todo-dtails .container .middle-details .todo-table .edit-description, .todo-dtails .container .middle-details .completed-table .edit-name, .todo-dtails .container .middle-details .completed-table .edit-description {
+  width: 1em;
+}
+
+.todo-dtails .container .right-details {
+  width: 10%;
+}
+/*# sourceMappingURL=main.css.map */

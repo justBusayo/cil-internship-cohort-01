@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Poppins:wght@200&family=Qahiri&family=Zen+Antique+Soft&display=swap");
+body {
+  margin: 0;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+.hide-element {
+  display: none;
+}
+
+.show-element {
+  display: block;
+}
+
+.task-page-links {
+  background-color: whitesmoke;
+  padding: .3em;
+  border-radius: 10px;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.navbar .container {
+  text-align: center;
+}
+
+.navbar .container .logo h3 img {
+  margin: -.5em;
+}
+
+.todo-dtails .container {
+  background-image: url("../images/bg.jpg");
+  background-size: 100% auto;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5em;
+}
+
+.todo-dtails .container .left-details {
+  width: 15%;
+  text-align: left;
+  height: auto;
+}
+
+.todo-dtails .container .left-details ul {
+  margin: 5em 0 5em 0;
+  color: #0635C9;
+  position: relative;
+}
+
+.todo-dtails .container .left-details ul li {
+  font-size: 15px;
+  color: #6B675E;
+  margin-bottom: 1em;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+}
+
+.todo-dtails .container .left-details ul :nth-child(1)::before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/today.png");
+  background-size: contain;
+  margin-right: 5em;
+}
+
+.todo-dtails .container .left-details ul :nth-child(2)::before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/task.png");
+  background-size: contain;
+  margin-right: 5em;
+}
+
+.todo-dtails .container .left-details ul :nth-child(3)::before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/completed.png");
+  background-size: contain;
+  margin-right: 5em;
+}
+
+.todo-dtails .container .todo-edit {
+  margin-top: 5em;
+  padding-left: 2em;
+}
+
+.todo-dtails .container .todo-edit .edit-labels {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+  color: #975454;
+  font-weight: bold;
+}
+
+.todo-dtails .container .todo-edit .edit-input {
+  width: 80%;
+  padding: -8em;
+  margin-bottom: 1em;
+  border-radius: .9em;
+  border: 2pm solid #e7e1e1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.todo-dtails .container .todo-edit .cancel-edit {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+.todo-dtails .container .todo-edit .submit-edit {
+  width: 50%;
+  padding: -8em;
+  margin-bottom: 1em;
+  border-radius: .9em;
+  border: 2pm solid #e7e1e1;
+  background-color: #0D47A1;
+  color: #ffffff;
+}
+
+.todo-dtails .container .middle-details {
+  width: 70%;
+}
+
+.todo-dtails .container .middle-details .present-date {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.todo-dtails .container .middle-details .present-date span {
+  font-size: 12px;
+  color: #0635C9;
+}
+
+.todo-dtails .container .middle-details .add-todo {
+  font-size: 15px;
+  text-align: left;
+  font-weight: bold;
+  color: #df4b4b;
+  margin-left: 90px;
+}
+
+.todo-dtails .container .middle-details .add-todo img {
+  width: 15px;
+  height: 15px;
+}
+
+.todo-dtails .container .middle-details .add-todo:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  color: darkgray;
+}
+
+.todo-dtails .container .middle-details label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+  color: #975454;
+  font-weight: bold;
+}
+
+.todo-dtails .container .middle-details label small {
+  color: red;
+  font-size: x-small;
+}
+
+.todo-dtails .container .middle-details .input-form, .todo-dtails .container .middle-details textarea {
+  width: 50%;
+  padding: -8em;
+  margin-bottom: 1em;
+  border-radius: .9em;
+  border: 2pm solid #e7e1e1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.todo-dtails .container .middle-details .input-form {
+  height: 30px;
+}
+
+.todo-dtails .container .middle-details textarea {
+  height: 90px;
+}
+
+.todo-dtails .container .middle-details input[type="submit"] {
+  background-color: #DF4B4B;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  width: unset;
+  cursor: pointer;
+}
+
+.todo-dtails .container .middle-details .cancel-task {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+.todo-dtails .container .middle-details .todo-table, .todo-dtails .container .middle-details .completed-table {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.todo-dtails .container .middle-details .todo-table h2, .todo-dtails .container .middle-details .completed-table h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table li, .todo-dtails .container .middle-details .completed-table .responsive-table li {
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col, .todo-dtails .container .middle-details .completed-table .responsive-table .col {
+  margin: .5em;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .table-header, .todo-dtails .container .middle-details .completed-table .responsive-table .table-header {
+  background-color: #51E9CD;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .table-row, .todo-dtails .container .middle-details .completed-table .responsive-table .table-row {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col-1, .todo-dtails .container .middle-details .completed-table .responsive-table .col-1 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col-2, .todo-dtails .container .middle-details .completed-table .responsive-table .col-2 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col-3, .todo-dtails .container .middle-details .completed-table .responsive-table .col-3 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col-4, .todo-dtails .container .middle-details .completed-table .responsive-table .col-4 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col-5, .todo-dtails .container .middle-details .completed-table .responsive-table .col-5 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.todo-dtails .container .middle-details .todo-table .responsive-table .col-6, .todo-dtails .container .middle-details .completed-table .responsive-table .col-6 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.todo-dtails .container .middle-details .todo-table .delete, .todo-dtails .container .middle-details .completed-table .delete {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+}
+
+.todo-dtails .container .middle-details .todo-table .edit, .todo-dtails .container .middle-details .completed-table .edit {
+  color: blue;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.todo-dtails .container .middle-details .todo-table .edit-name, .todo-dtails .container .middle-details .todo-table .edit-description, .todo-dtails .container .middle-details .completed-table .edit-name, .todo-dtails .container .middle-details .completed-table .edit-description {
+  width: 1em;
+}
+
+.todo-dtails .container .right-details {
+  width: 10%;
+}
+/*# sourceMappingURL=main.css.map */

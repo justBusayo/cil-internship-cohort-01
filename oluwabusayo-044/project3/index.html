@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo List</title>
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h3><img src="images/logo.svg" alt="logo"> Simple ToDo with TypeScript</h3>
+                </div>
+            </div>
+        </div>
+
+            <!-- Todo details -->
+            <div class="todo-dtails">
+                <div class="container">
+                    <div class="left-details">
+                        <div class="filter-details">
+                        </div>
+                    </div>
+
+                    <!-- for creating todo and view other details -->
+                    <div class="middle-details">
+
+                        <!-- to do form starts -->
+                        <div class="todo-form">
+                            <form id="todoForm">
+                                <h3>Add Todo</h3>
+                                <label for="task">Task <small id="name-message"></small></label> 
+                                <input type="text" class="input-form" name="task" id="task">
+    
+                                <label for="todo-date">Date <small id="date-message"></small></label>
+                                <input type="date" class="input-form date-form" name="date" id="todo-date">
+                                <input type="submit" value="Create Task" class="submit" id="submit">
+                            </form>
+                            <!-- Edit form -->
+                            <form class="hide-element edit-form" id="edit-form">
+                                <h3 class="edit-header">Edit Todo</h3>
+                                <label for="task">Task <small id="name-message"></small></label> 
+                                <input type="text" class="input-form" name="task" id="edit-task">
+                                <input type="text" class="input-form" name="id" id="edit-id" hidden>
+    
+                                <label for="todo-date">Date <small id="date-message"></small></label>
+                                <input type="date" class="input-form date-form" name="date" id="edit-date">
+                                <input type="submit" value="Edit Task" class="submit" id="submit">
+                                <a class="cancel-edit" id="cancel-edit" title="Cancel Edit">Cancel</a>
+                            </form>
+                        </div>
+                        <!-- to do form ends -->
+
+
+                        <!-- Todo Table Lists for all Tasks-->
+                        <div class="todo-table" id="todo-table">
+                            <h2>Todo Lists</h2>
+                            <ul class="responsive-table" id="allTasks">
+                              <li class="table-header">
+                                <div class="col col-1">Task</div>
+                                <div class="col col-3">Date</div>
+                                <div class="col col-5">Actions</div>
+                              </li>
+                              <!-- <li class="table-row">
+                                <div class="col col-1" data-label="Todo" id="todo">House Chores</div>
+                                  <div class="col col-3" data-label="Date" id="date">23/12/2021</div>
+                                  <div class="col col-5" data-label="Delete">
+                                    <img src="images/delete.png" alt="delete" title="Delete" class="delete" id=1>
+                                    <img src="images/edit.png" alt="edit" title="Edit" class="edit" id="">
+                                  </div>
+                              </li> -->
+                            </ul>
+                          </div>
+                          <!-- todo table lists ends -->
+
+                    </div>
+
+                    <div class="right-details">
+                        <div class="demo-calendar">
+                            <!-- <img src="images/bell.png" alt="" class="date-demo"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="dist/main.js"></script>
+    </body>
+</html>
